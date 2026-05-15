@@ -1,0 +1,202 @@
+.auth-menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 156px;
+    background-color: rgb(17, 85, 204);
+    width: 300px;
+    height: 500px;
+    z-index: 101;
+    padding: 6px 6px;
+    color: white;
+    border-radius: 10px;
+}
+
+.auth-menu a {
+    color:rgb(105, 235, 252);
+    transition: color .2s;
+}
+
+.auth-menu input {
+    padding-inline: 10px;
+}
+
+.auth-menu a:hover {
+    color:rgb(118, 166, 207);
+}
+
+.auth-menu-button {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    transition: background-color .2s;
+    font-size: 14px;
+}
+
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.form-style div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-menu-authorize-button {
+    background-color: rgb(38, 144, 59);
+    color: white;
+}
+
+.auth-menu-authorize-button:hover {
+    background-color:rgb(16, 156, 46);
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+
+.webauth-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.webauth-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    column-gap: 4px;
+}
+
+.webauth-button-content {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    column-gap: 4px;;
+}
+
+.webauth-button-name {
+    line-height: -1;
+}
+
+.block {
+    display: none;
+    position: relative;
+    padding: 8px 8px;
+    border-radius: 6px;
+}
+
+.message {
+    background-color: green;
+}
+
+.error {
+    background-color: rgb(204, 33, 33);
+}
+
+.close-message-button {
+    border: none;
+    position: absolute;
+    border-radius: 6px;
+    padding: 2px 8px;
+    top: -8px;
+    right: -6px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+/* sign in form */
+
+
+.form-content {
+    margin: 6px 6px;
+    font-size: 14px;
+}
+
+.form-content h1 {
+    text-align: center;
+}
+
+.form-content a {
+    text-decoration: none;
+}
+
+.form-content input {
+    border: none;
+    font-size: 16px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.webauth-option-logo {
+    height: 16px;
+    width: 16px;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    background-color: rgb(240, 246, 252);
+    content: "";
+    flex: 1;
+    height: 1px;
+}
+
+.auth-divider::before {
+    margin-right: 12px;
+}
+
+.auth-divider::after {
+    margin-left: 12px;
+}
+
+
+form label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.password-fields-container {
+    position: relative;
+}
+
+.forgot-pass-ref {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* sign in form */
+
+/* sign up form */
+.sign-up-form {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 85, 204);
+    width: 300px;
+    height: 500px;
+    z-index: 102;
+    padding: 6px 6px;
+    color: white;
+    border-radius: 10px;
+}

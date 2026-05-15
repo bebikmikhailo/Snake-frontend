@@ -1,0 +1,30 @@
+* {
+    font-family: "Arial";
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    height: 100vh;
+}
+
+.main {
+    position: relative;
+    width: 640px;
+    height: 641px;
+}
+
+.menu-icon {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}

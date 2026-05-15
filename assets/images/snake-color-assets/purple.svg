@@ -1,0 +1,32 @@
+<svg width="40" height="40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- body -->
+  <circle cx="96" cy="100" r="74" fill="none"
+    stroke="hsl(280, 100%, 50%)" stroke-width="29"
+    stroke-linecap="round"
+    stroke-dasharray="380 100"
+    transform="rotate(-10 100 100)" />
+
+  <!-- head -->
+  <g transform="translate(164, 80) scale(0.3) rotate(-100)">
+
+    <circle cx="0" cy="0" r="100" fill="hsl(280, 100%, 50%)" />
+
+    <g fill="white">
+      <circle cx="-5" cy="45" r="40" />
+      <circle cx="-5" cy="-45" r="40" />
+    </g>
+
+    <g fill="hsl(280, 100%, 20%)">
+      <circle cx="10" cy="35" r="18" />
+      <circle cx="10" cy="-55" r="18" />
+    </g>
+
+    <g fill="hsl(280, 100%, 30%)">
+      <circle cx="60" cy="20" r="6" />
+      <circle cx="60" cy="-20" r="6" />
+    </g>
+
+  </g>
+
+</svg>

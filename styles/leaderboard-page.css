@@ -1,0 +1,71 @@
+.leaderboard-page {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(17, 85, 204);
+    top: -49px;
+    left: 120px;
+    width: 400px;
+    height: 594px;
+    z-index: 102;
+    padding: 6px 6px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.player-table-headings {
+    background-color: rgb(17, 60, 129);
+    margin-inline: 4px;
+    padding-block: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: grid;
+    grid-template-columns: 75px 1fr 95px;
+}
+
+.player-table-heading {
+    font-weight: 600;
+}
+
+.align-left {
+    display: flex;
+    justify-self: start;
+}
+
+.best-players-container {
+    background-color: rgb(10, 38, 82);
+    height: 100%;
+    margin-inline: 4px;
+    margin-bottom: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow-y: auto;
+    scrollbar-color: rgb(10, 38, 82) rgb(17, 60, 129);; 
+    scrollbar-width: thin;
+}
+
+.content-item {
+    display: grid;
+    padding-block: 10px;
+    grid-template-columns: 75px 1fr 75px;
+    align-items: center;
+}
+
+.table-avatar-username-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.table-username {
+    margin-left: 10px
+}
+
+.table-avatar {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}

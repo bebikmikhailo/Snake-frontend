@@ -1,0 +1,13 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Коричневая веточка (branch) -->
+  <rect x="18" y="4" width="4" height="10" fill="brown" />
+
+  <!-- Зеленый листик (leaf) -->
+  <ellipse cx="26" cy="8" rx="7" ry="3" fill="green" transform="rotate(-30 26 8)" />
+
+  <!-- Красное тело яблока (red body) БЕЗ ТЕНИ -->
+  <circle cx="20" cy="24" r="14" fill="red" />
+
+  <!-- Блик (glare) -->
+  <ellipse cx="14" cy="18" rx="5" ry="3" fill="#FF7074" transform="rotate(-45 14 18)" />
+</svg>

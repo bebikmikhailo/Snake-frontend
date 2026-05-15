@@ -1,0 +1,49 @@
+.account-menu {
+    color: white;
+    display: none;
+    position: absolute;
+    top: -55px;
+    left: 150px;
+    width: 312px;
+    height: 600px;
+    z-index: 102;
+    grid-template-rows: 2fr 1fr;
+    gap: 8px;
+    padding: 6px 6px;
+}
+
+.account-avatar-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-avatar-name-container {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.account-profile-avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.account-name-div {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.account-free-space {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-free-space {
+    position: relative;
+    background-color: rgb(17, 85, 204);
+}

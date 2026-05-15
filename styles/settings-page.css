@@ -1,0 +1,101 @@
+.settings-page {
+    color: white;
+    display: none;
+    position: absolute;
+    top: -55px;
+    left: 150px;
+    width: 312px;
+    height: 600px;
+    z-index: 103;
+    grid-template-rows: 8fr 1fr;
+    gap: 8px;
+    padding: 6px 6px;
+    border-radius: 10px;
+}
+
+.settings-categories {
+    display: block;
+    height: auto;
+    z-index: 103;
+    padding: 6px 6px;
+    border-radius: 10px;
+
+    background-color: rgb(17, 85, 204);
+}
+
+.settings-back-button {
+    background-color: rgb(17, 85, 204);
+    border: none;
+    cursor: pointer;
+}
+
+.buttons-block {
+    display: block;
+}
+
+.categories-container {
+    display: grid;
+    grid-template-rows: 75px;
+    row-gap: 4px;
+}
+
+
+.category-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    height: 74px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.category-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movable-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform .2s;
+}
+
+.movable-icon:hover {
+    transform: scale(1.5);
+}
+
+.selected {
+   /* box-shadow: rgba(255, 255, 255, 1) 0px 0px 15px; */
+   border: 2px solid red;
+}
+
+.game-control-buttons {
+    margin-top: 20px;
+    margin-inline: 4px;
+    display: grid;
+    grid-template-rows: 75px;
+    row-gap: 4px;
+}
+
+.volume-container {
+    height: auto;
+    width: auto;
+}
+
+.volume-input-container {
+    margin-top: 4px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.volume-icon {
+    height: 34px;
+    width: 34px;
+}
+
+
+.volume-input {
+    accent-color: rgb(255, 255, 255);
+}

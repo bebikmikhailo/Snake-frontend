@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/hud-bar.css">
+    <link rel="stylesheet" href="styles/canva-window.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/auth-menu.css">
+    <link rel="stylesheet" href="styles/account-menu.css">
+    <link rel="stylesheet" href="styles/stats-page.css">
+    <link rel="stylesheet" href="styles/leaderboard-page.css">
+    <link rel="stylesheet" href="styles/settings-page.css">
+    <link rel="stylesheet" href="styles/edit-profile-page.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="global-overlay js-global-overlay"></div>
+
+
+        <div class="hud-bar js-hud-bar">
+            <div class="left-part">
+                <div class="game-stats-container">
+                    <img src="./assets/images/apple.svg" alt="food image" class="hud-bar-icon">
+                    <div class="hud-bar-score js-hud-bar-score">
+                        0
+                    </div>
+                </div>
+                <div class="game-stats-container">
+                    <img src="./assets/images/throphy-icon.png" alt="trophy image" class="hud-bar-icon">
+                    <div class="hud-bar-score js-hud-bar-best-score">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas class="canvas-window"></canvas>
+            <div class="hud-menu js-hud-menu">
+                <div class="post-game-stats">
+                    <div class="image-score-container">
+                        <img src="./assets/images/apple.svg" alt="food image" class="menu-stats-img">
+                        <div class="menu-score js-menu-score">
+                            0
+                        </div>
+                    </div>
+                    <div class="image-score-container">
+                        <img src="./assets/images/throphy-icon.png" alt="trophy image" class="menu-stats-img">
+                        <div class="menu-score js-menu-best-score">
+                            0
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-buttons-container">
+                    <button class="menu-button js-menu-play-button">
+                        Play
+                        <img src="./assets/images/play-icon.svg" alt="play icon" class="menu-icon">
+                    </button>
+                    <button class="menu-button js-menu-settings-button">
+                        Settings
+                        <img src="./assets/images/gear-icon.svg" alt="gear icon" class="menu-icon">
+                    </button>
+                    <button class="menu-button js-menu-leaderboard-button">
+                        Leaderboard
+                        <img src="./assets/images/crown-icon.svg" alt="crown icon" class="menu-icon">
+                    </button>
+                    <button class="menu-button menu-sign-in-button js-menu-sign-in-button">
+                        Sign in
+                        <img src="./assets/images/sign-in-icon.svg" alt="sign in icon" class="menu-icon">
+                    </button>
+                    <button class="menu-button player-account-button js-player-account-button">
+                        <div class="account-button-container">
+                            <img src="./assets/images/default-avatar.webp" alt="avatar" class="account-avatar js-menu-account-avatar">
+                            <div class="js-account-username"></div>
+                            <img src="./assets/images/three-dots-icon.svg" alt="three dots icon" class="account-three-dots-icon">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="settings-page js-settings-page">
+                <div class="settings-categories">
+
+                    <button class="settings-back-button js-menu-settings-back-button">
+                        <img src="./assets/images/left-arrow.svg" alt="Back" class="menu-back-arrow-icon">
+                    </button>
+                    <div class="categories-container">
+                        <div class="category-row js-category-row" data-section="map_hud">
+                            <div class="category-container">
+                                <img src="../client/assets/images/map-assets/light-purple-8x8.svg" alt="#" class="movable-icon js-movable-icon selected" data-value="light_purple">
+                            </div>
+                            <div class="category-container">
+                                <img src="../client/assets/images/map-assets/green-8x8.svg" alt="#" class="movable-icon js-movable-icon" data-value="light_green">
+                            </div>
+                            <div class="category-container">
+                                <img src="../client/assets/images/map-assets/red-8x8.svg" alt="#" class="movable-icon js-movable-icon" data-value="light_red">
+                            </div>
+                            <div class="category-container">
+                                <img src="../client/assets/images/map-assets/orange-8x8.svg" alt="#" class="movable-icon js-movable-icon"  data-value="light_orange">
+                            </div>
+                            <div class="category-container">
+                                <img src="../client/assets/images/map-assets/grey-8x8.svg" alt="#" class="movable-icon js-movable-icon" data-value="light_grey">
+                            </div>
+                        </div>
+                        <div class="category-row js-category-row" data-section="snake_color">
+                            <div class="category-container">
+                                <img src="../client/assets/images/snake-color-assets/light-blue.svg" alt="#" class="movable-icon js-movable-icon selected" data-value="light_blue">
+                            </div>
+                            <div class="category-container">
+                                <img src="../client/assets/images/snake-color-assets/orange.svg" alt="#" class="movable-icon js-movable-icon" data-value="orange">
+                            </div>
+                            <div class="category-container">
+                                <img src="../client/assets/images/snake-color-assets/purple.svg" alt="#" class="movable-icon js-movable-icon" data-value="purple">
+                            </div>
+                            <div class="category-container">
+                                <img src="../client/assets/images/snake-color-assets/red.svg" alt="#" class="movable-icon js-movable-icon" data-value="red">
+                            </div>
+                            <div class="category-container">
+                                <img src="../client/assets/images/snake-color-assets/green.svg" alt="#" class="movable-icon js-movable-icon" data-value="green">
+                            </div>
+                        </div>
+                        <div class="category-row js-category-row" data-section="food_type">
+                            <div class="category-container">
+                                <img src="../client/assets/images/food-assets/apple.svg" alt="#" class="movable-icon js-movable-icon selected" data-value="apple">
+                            </div>
+                        </div>
+                        <div class="js-category-row"></div>
+                    </div>
+                    <div class="game-control-buttons">
+                        <div class="volume-container">
+                            <label for="volume">Game sounds volume</label>
+                            <div class="volume-input-container">
+                                <img src="../client/assets/images/volume-icon.svg" alt="#" class="volume-icon js-volume-icon">
+                                <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" class="volume-input js-volume-input">
+                                <span class="js-volume-value-container">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="menu-button js-settings-apply-button">Apply</button>
+            </div>
+
+            <div class="account-menu js-account-menu">
+                <div class="account-free-space">
+                    <button class="menu-back-button js-account-menu-back-button">
+                        <img src="./assets/images/left-arrow.svg" alt="Back" class="menu-back-arrow-icon">
+                    </button>
+                    <div class="account-avatar-name-container">
+                        <img src="./assets/images/default-avatar.webp" alt="avatar" class="account-avatar account-profile-avatar js-profile-account-avatar">
+                        <div class="account-name-div js-account-menu-username"></div>
+                    </div>
+                </div>
+                <div class="menu-buttons-container">
+                    <button class="menu-button js-account-menu-edit-profile-button">
+                        Edit
+                        <img src="./assets/images/edit-icon.svg" alt="edit icon" class="menu-icon">
+                    </button>
+                    <button class="menu-button js-account-menu-stats-button">
+                        Stats
+                        <img src="./assets/images/stats-icon.svg" alt="stats icon" class="menu-icon">
+                    </button>
+                    <button class="menu-button js-account-menu-logout-button">
+                        Logout
+                        <img src="./assets/images/logout-icon.svg" alt="logout icon" class="menu-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="edit-account-page js-edit-account-page">
+                <button class="edit-account-back-button js-edit-account-page-back-button">
+                    <img src="./assets/images/left-arrow.svg" alt="Back" class="menu-back-arrow-icon">
+                </button>
+                <div class="edit-account-page-content"> 
+                    <div class="edit-data-container">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" class="js-edit-username-input">
+                    </div>
+                    <div class="edit-avatar-container">
+                        <div class="avatars-container">
+                            <div>Avatar</div>
+                            <div>
+                                <img src="./assets/images/default-avatar.webp" alt="#" class="preview-avatar-image-64x64 js-preview-avatar-64x64">
+                                <img src="./assets/images/default-avatar.webp" alt="#" class="preview-avatar-image-40x40 js-preview-avatar-40x40">
+                            </div>
+                        </div>
+                        <div class="upload-avatar-button-container">
+                            <input type="file" id="avatar-input" accept="image/png, image/jpeg, image/jpg" hidden class="js-avatar-input">
+                            <label for="avatar-input" class="edit-account-button upload-avatar-button">Upload avatar</label>
+                            <div>Upload avatar from your device.</div>
+                        </div>
+                    </div>
+                    <button class="edit-account-button edit-account-save-button js-edit-account-save-button">Save</button>
+                    <div class="block error js-edit-page-message-block">
+                        <span class="js-message-text"></span>
+                        <button class="close-message-button js-edit-page-close-message-button">X</button>
+                    </div>
+                    <!-- <div class="edit-data-container">
+                        <div>Password</div>
+                        <button class="edit-account-button edit-account-change-password-button">Change password</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="stats-page js-stats-page">
+                <button class="menu-back-button js-stats-page-back-button">
+                    <img src="./assets/images/left-arrow.svg" alt="Back" class="menu-back-arrow-icon">
+                </button>
+                <h1>Statistic</h1>
+                <div class="statistic-container">
+                    <div class="block-stats">
+                        <div class="stat-container">
+                            <span class="stat-value js-stat-games">100</span>
+                            <span class="stat-name">Games</span>
+                        </div>
+                        <div class="stat-container">
+                            <span class="stat-value js-stat-eaten-food">1000</span>
+                            <span class="stat-name">Eaten food</span>
+                        </div>
+                        <div class="stat-container">
+                            <span class="stat-value js-stat-best-score">20</span>
+                            <span class="stat-name">Best score</span>
+                        </div>
+                    </div>
+                    <div class="stat-container row-stat">
+                            <span class="stat-value js-stat-last-game-at">100</span>
+                            <span class="stat-name">Last game at</span>
+                    </div>
+                </div>
+            </div>
+            <div class="leaderboard-page js-leaderboard-page">
+                <button class="menu-back-button js-leaderboard-page-back-button">
+                        <img src="./assets/images/left-arrow.svg" alt="Back" class="menu-back-arrow-icon">
+                </button>
+                <h1>Best players</h1>
+                <div class="player-table-headings">
+                    <span class="player-table-heading">Rank</span>
+                    <span class="player-table-heading align-left">Player</span>
+                    <span class="player-table-heading">Score</span>
+                </div>
+                <div class="best-players-container js-best-players-container">
+                    <div class="content-item">
+                        <span>1</span>
+                        <div class="table-avatar-username-conteiner">
+                            <img src="./assets/images/default-avatar.webp" alt="avatar" class="table-avatar">
+                            <span class="table-username">John Pork</span>
+                        </div>
+                        <span class="">100</span>
+                    </div>
+                    <div class="content-item">
+                        <span>1</span>
+                        <div class="table-avatar-username-conteiner">
+                            <img src="./assets/images/default-avatar.webp" alt="avatar" class="table-avatar">
+                            <span class="table-username">John Pork</span>
+                        </div>
+                        <span class="">100</span>
+                    </div>
+                    <div class="content-item">
+                        <span>1</span>
+                        <div class="table-avatar-username-conteiner">
+                            <img src="./assets/images/default-avatar.webp" alt="avatar" class="table-avatar">
+                            <span class="table-username">John Pork</span>
+                        </div>
+                        <span class="">100</span>
+                    </div>
+                    <div class="content-item">
+                        <span>1</span>
+                        <div class="table-avatar-username-conteiner">
+                            <img src="./assets/images/default-avatar.webp" alt="avatar" class="table-avatar">
+                            <span class="table-username">asdfasdfasdfasdf</span>
+                        </div>
+                        <span class="">100</span>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-menu js-auth-menu">
+                <button class="menu-back-button js-sign-in-back-button">
+                        <img src="./assets/images/left-arrow.svg" alt="Back" class="menu-back-arrow-icon">
+                </button>
+                <div class="sign-in-form">
+                    <div class="form-content">
+                        <h1>Sign in</h1>
+                        <form action="#" class="form-style js-sign-in-form">
+                            <div>
+                                <label for="login-field">Email address</label>
+                                <input type="email" id="login-field" name="email">
+                            </div>
+                            <div class="password-fields-container">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password">
+                                <!-- <a href="#" class="forgot-pass-ref">Forgot password?</a> -->
+                            </div>
+                            <button class="auth-menu-button auth-menu-authorize-button">Sign in</button>
+                        </form>
+                        <!-- <div class="webauth-container">
+                            <div class="auth-divider">
+                                <span>or</span>
+                            </div>
+                            <button class="auth-menu-button webauth-button">
+                                <div class="webauth-button-content">
+                                    <img src="./assets/images/google-icon-logo.svg" alt="" class="webauth-option-logo">
+                                    <span class="webauth-button-name">Continue with Google</span>
+                                </div>
+                            </button>
+                        </div> -->
+                        <span>
+                            Dont have an account?
+                            <a href="#" class="js-create-acc-ref">Create an account</a>
+                        </span>
+                        <div class="block error js-sign-in-message-block">
+                            <span class="js-message-text"></span>
+                            <button class="close-message-button js-sign-in-close-message-button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sign-up-form js-sign-up-form-window">
+                    <button class="menu-back-button js-sign-up-back-button">
+                        <img src="./assets/images/left-arrow.svg" alt="Back" class="menu-back-arrow-icon">
+                    </button>
+                    <div class="form-content">
+                        <h1>Sign up</h1>
+                        <form action="#" class="form-style js-sign-up-form">
+                            <div>
+                                <label for="login-field">Email address</label>
+                                <input type="email" id="login-field" name="email">
+                            </div>
+                            <div>
+                                <label for="username-field">Username</label>
+                                <input type="text" id="username-field" name="username">
+                            </div>
+                            <div class="password-fields-container">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <button class="auth-menu-button auth-menu-authorize-button">Create account</button>
+                        </form>
+                        <!-- <div class="webauth-container">
+                            <div class="auth-divider">
+                                <span>or</span>
+                            </div>
+                            <button class="auth-menu-button webauth-button">
+                                <div class="webauth-button-content">
+                                    <img src="./assets/images/google-icon-logo.svg" alt="" class="webauth-option-logo">
+                                    <span class="webauth-button-name">Continue with Google</span>
+                                </div>
+                            </button>
+                        </div> -->
+                        <span>
+                            Already have an account?
+                            <a href="#" class="js-sign-in-ref">Sign in</a>
+                        </span>
+                        <div class="block error js-sign-up-message-block">
+                            <span class="js-message-text"></span>
+                            <button class="close-message-button js-sign-up-close-message-button">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="src/script.js"></script>
+</body>
+</html>
