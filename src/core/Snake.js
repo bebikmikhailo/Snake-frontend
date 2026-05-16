@@ -103,25 +103,25 @@ export class Snake {
     chooseMoveDirection() {
         const lastKeyPressed = this.game.listner.getLastPressedKey();
 
-        if (lastKeyPressed === "w" && this.moveDirection !== "Down") {
+        if ((lastKeyPressed === 87 || lastKeyPressed === 38) && this.moveDirection !== "Down") {
             this.game.soundManager.playSnakeMoveForwardSound();
             this.moveDirection = "Up";
             this.ySpeed = -this.speed;
             this.xSpeed = 0;
         }
-        else if (lastKeyPressed === "s" && this.moveDirection !== "Up") {
+        else if ((lastKeyPressed === 83 || lastKeyPressed === 40) && this.moveDirection !== "Up") {
             this.game.soundManager.playSnakeMoveBackwardSound();
             this.moveDirection = "Down";
             this.ySpeed = this.speed;
             this.xSpeed = 0;
         }
-        else if(lastKeyPressed === "d" && this.moveDirection !== "Left") {
+        else if((lastKeyPressed === 68 || lastKeyPressed === 39) && this.moveDirection !== "Left") {
             this.game.soundManager.playSnakeMoveRightSound();
             this.moveDirection = "Right";
             this.xSpeed = this.speed;
             this.ySpeed = 0;
         }   
-        else if(lastKeyPressed === "a" && this.moveDirection !== "Right") {
+        else if((lastKeyPressed === 65 || lastKeyPressed === 37) && this.moveDirection !== "Right") {
             this.game.soundManager.playSnakeMoveLeftSound();
             this.moveDirection = "Left";
             this.xSpeed = -this.speed;
