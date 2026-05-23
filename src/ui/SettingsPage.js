@@ -30,9 +30,9 @@ export class SettingsPage {
             this.volumeValueContainer.textContent = `${Math.round(value * 100)}%`;
 
             if (Number(value) === 0) {
-                this.volumeIcon.src = "../client/assets/images/volume-off-icon.svg"
+                this.volumeIcon.src = "./assets/images/volume-off-icon.svg"
             } else {
-                this.volumeIcon.src = "../client/assets/images/volume-icon.svg"
+                this.volumeIcon.src = "./assets/images/volume-icon.svg"
             }
         });
     }
